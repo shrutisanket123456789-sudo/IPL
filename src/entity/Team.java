@@ -15,15 +15,32 @@ public class Team {
 	
 	private boolean isQualified;
 	
+	private String shortName;
+	
+	public String getShortName() {
+		return shortName;
+	}
+
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
+	}
+
+	//toString() -> converts object toString
+	// right click -> source -> generate toString()	
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", teamName=" + teamName + ", captainName=" + captainName + ", coachName=" + coachName
+				+ ", nRR=" + nRR + ", isQualified=" + isQualified + ", shortName=" + shortName + "]";
+	}
+
 	
 	//generate setter-getter for all fields
-
 
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+		public void setId(int id) {
 		this.id = id;
 	}
 
@@ -68,7 +85,6 @@ public class Team {
 	}
 	
 }
-	
 	
 	
 	
